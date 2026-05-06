@@ -4,6 +4,21 @@ A simple Command-Line Interface (CLI) application built in Python to calculate a
 
 This project focuses on practicing clean code structure, input validation, data handling, and small application design, going beyond just performing the calculation.
 
+## 🔄 Project Evolution
+
+This project has been improved from its initial version:
+
+### v1 (Initial Version)
+- Saved data in `.txt`
+- Basic functionality
+- Focus on core logic
+
+### v2 (Current Version)
+- Uses **pandas + CSV** for structured data storage
+- Displays history dynamically
+- Improved input validation and structure
+- More modular and scalable code
+
 🚀 Features
 
 📌 BMI calculation using weight and height
