@@ -1,78 +1,59 @@
-# 📊 BMI Health Analyzer (CLI - Python)
+📊 BMI Health Analyzer (CLI - Python)
 
 A simple Command-Line Interface (CLI) application built in Python to calculate and classify Body Mass Index (BMI), with support for both metric and imperial units.
 
-This project focuses on practicing clean code structure, input validation, and basic application design rather than just solving the calculation itself.
+This project focuses on practicing clean code structure, input validation, data handling, and small application design, going beyond just performing the calculation.
 
----
+🚀 Features
 
-## 🚀 Features
+📌 BMI calculation using weight and height
 
-* 📌 BMI calculation using weight and height
-* 📊 Classification based on standard BMI categories
-* 🔄 Support for:
+📊 Classification based on standard BMI categories
 
-  * Metric units (kg, meters)
-  * Imperial units (lbs, inches) with automatic conversion
-* 🛡️ Input validation and error handling
-* 🔁 Continuous execution loop for repeated use
-* 💾 Data persistence: saves results to a `.txt` file
+🔄 Support for:
 
----
+Metric units (kg, meters)
+Imperial units (lbs, inches) with automatic conversion
 
-## 🧠 What I Learned
+🛡️ Input validation and error handling
 
-* Writing modular and reusable functions
-* Structuring a small application using control flow (loops and conditionals)
-* Handling user input safely with exception handling
-* Separating logic (calculation, classification, conversion, persistence)
-* Thinking beyond scripts and towards simple software design
+🔁 Continuous execution loop for repeated use
 
----
+💾 Data persistence: saves results to a CSV file
 
+📈 Displays history of previous results directly in the terminal
 
-
-## 📂 Project Structure (Current)
-
-```bash
+🧠 What I Learned
+Writing modular and reusable functions
+Structuring a small application using control flow (loops and conditionals)
+Handling user input safely with exception handling
+Working with pandas for data storage and retrieval
+Managing file operations (create, append, read)
+Separating responsibilities (calculation, classification, conversion, persistence)
+Thinking beyond scripts and towards simple software design
+📂 Project Structure (Current)
 .
 ├── main.py
-├── bmi_results.txt
+├── bmi_results.csv
 └── README.md
-```
-
----
-
-## 💡 Example Output
-
-```text
+💡 Example Output
 BMI: 22.86 kg/m²
 Category: Healthy Weight
-```
 
-Saved to file:
+Saved to file (bmi_results.csv):
 
-```text
-Weight: 70.00 kg | Height: 1.75 m | BMI: 22.86 kg/m² | Category: Healthy Weight
-```
+Weight (kg) | Height (m) | BMI  | Category
+70.0        | 1.75       | 22.86| Healthy Weight
 
----
+Terminal history display:
 
-## 🔧 Future Improvements
+History of results:
+[DataFrame output shown here]
 
-* ⏱️ Add timestamps to saved results
-* 🖥️ Improve user interface (CLI enhancements or GUI)
-* 📈 Add data analysis features (history, averages, trends)
-* 🌐 Potential web version using Flask
+🤝 Feedback
 
----
+This is a learning project, so feedback, suggestions, and improvements are always welcome.
 
-## 🤝 Feedback
-
-This is a learning project, so feedback, suggestions, and improvements are welcome.
-
----
-
-## 📜 License
+📜 License
 
 This project is open-source and available under the MIT License.
