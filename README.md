@@ -1,74 +1,71 @@
-📊 BMI Health Analyzer (CLI - Python)
+📊 BMI Health Analyzer (CLI + Streamlit - Python)
 
-A simple Command-Line Interface (CLI) application built in Python to calculate and classify Body Mass Index (BMI), with support for both metric and imperial units.
+A Python project to calculate and classify Body Mass Index (BMI), available as both a Command-Line Interface (CLI) and a Streamlit web application.
 
-This project focuses on practicing clean code structure, input validation, data handling, and small application design, going beyond just performing the calculation.
+This project focuses on clean code, input validation, data handling, and evolving a simple script into an interactive data application.
 
-## 🔄 Project Evolution
+🔄 Project Evolution
 
-This project has been improved from its initial version:
+v1 (Initial Version)
 
-### v1 (Initial Version)
-- Saved data in `.txt`
-- Basic functionality
-- Focus on core logic
+Saved data in .txt
+Basic functionality
+Focus on core logic
 
-### v2 (Current Version)
-- Uses **pandas + CSV** for structured data storage
-- Displays history dynamically
-- Improved input validation and structure
-- More modular and scalable code
+v2 (CLI Improved)
+
+Uses pandas + CSV for structured storage
+Displays history dynamically
+Better validation and modularization
+
+  ( Streamlit App)
+
+Interactive web interface
+Real-time BMI calculation
+Table visualization of results
+Improved user experience
 
 🚀 Features
+📌 BMI calculation and classification
+🔄 Metric & Imperial unit support (auto conversion)
+💾 Data saved to bmi_results.csv
+📈 History tracking (CLI + Web)
+🖥️ Two interfaces: CLI and Web (Streamlit)
 
-📌 BMI calculation using weight and height
-
-📊 Classification based on standard BMI categories
-
-🔄 Support for:
-
-Metric units (kg, meters)
-Imperial units (lbs, inches) with automatic conversion
-
-🛡️ Input validation and error handling
-
-🔁 Continuous execution loop for repeated use
-
-💾 Data persistence: saves results to a CSV file
-
-📈 Displays history of previous results directly in the terminal
-
-🧠 What I Learned
-Writing modular and reusable functions
-Structuring a small application using control flow (loops and conditionals)
-Handling user input safely with exception handling
-Working with pandas for data storage and retrieval
-Managing file operations (create, append, read)
-Separating responsibilities (calculation, classification, conversion, persistence)
-Thinking beyond scripts and towards simple software design
-📂 Project Structure (Current)
+📂 Project Structure
 .
-├── main.py
+├── cli_version/
+│   └── main.py
+├── streamlit_app/
+│   └── app.py
 ├── bmi_results.csv
 └── README.md
+
 💡 Example Output
+
+CLI:
+
 BMI: 22.86 kg/m²
 Category: Healthy Weight
 
-Saved to file (bmi_results.csv):
+Web App:
 
-Weight (kg) | Height (m) | BMI  | Category
-70.0        | 1.75       | 22.86| Healthy Weight
+Interactive inputs
+Instant results
+Table with history
 
-Terminal history display:
-
-History of results:
-[DataFrame output shown here]
+▶️ How to Run (Streamlit Version)
+Install dependencies:
+pip install streamlit pandas
+Navigate to the app folder:
+cd streamlit_app
+Run the app:
+streamlit run app.py
+Open in your browser:
+http://localhost:8501
 
 🤝 Feedback
-
-This is a learning project, so feedback, suggestions, and improvements are always welcome.
+This is a learning project — feedback and suggestions are welcome.
 
 📜 License
-
 This project is open-source and available under the MIT License.
